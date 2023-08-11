@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.8)
 
 project(ProgressiveX LANGUAGES CXX)
 
+# Set C++ standard for pybind11
+set(PYBIND11_CPP_STANDARD -std=c++17)
+
 # indicate if OPENMP should be enabled
 option(USE_OPENMP "Use OPENMP" ON)
 
